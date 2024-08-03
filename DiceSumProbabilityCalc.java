@@ -13,7 +13,7 @@ public class DiceSumProbabilityCalc {
 	private static long countCases(long n, long k)
 	{	// sum < (k-1) 1s and a 7 --> base case
 		if(n < (k-1) + 7) { return choose(n-1, k-1); }
-		long sb = choose(n-1, k-1);
+		long sb = 0;
 		for(long j = 7; j <= n-(k-1); j++) {
 		// k-many spots to put X_i = j, i in (1,...,k)
 			// * countCases left in k-1 positions that sum to n-j
