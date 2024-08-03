@@ -17,7 +17,7 @@ public class DiceSumProbabilityCalc {
 		for(long j = 7; j <= n-(k-1); j++) {
 		// k-many spots to put X_i = j, i in (1,...,k)
 			// * countCases left in k-1 positions that sum to n-j
-			// there is no way to put a 7, the multiplication should return the base number of cases
+			// if there is no way to put a 7, the multiplication should return the base number of cases
 			// n-j >= k-1 at all times so that base case bottoms out at 1 where all positions are 1
 			sb += k * countCases(n-j, k-1); 
 		}
