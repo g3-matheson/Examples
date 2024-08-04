@@ -1,6 +1,7 @@
 // COMP 233 Probability
 // COMP 249 Recursion
 // Find probability that the sum of 20 dice rolls X_i is in [30,40]
+// i don't think it works yet: doesn't properly produce a product of decreasing choice functions
 public class DiceSumProbabilityCalc {
 	public static void main(String[] args) {
 		long total = 0;
